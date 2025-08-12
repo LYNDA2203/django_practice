@@ -14,9 +14,15 @@
 </head>
 <body>
     <nav>
-        <a href ="/"> 🏠</a> |
-        <a href ="/about"> 😊</a> |
-        <a href ="/app"> 📰</a> 
+        <a href ="/"> 
+            <span role='img' aria-label="Home">🏠</span>
+        </a> |
+        <a href ="/about"> 
+             <span role='img' aria-label="Home">😊</span>
+        </a> |
+        <a href ="{% url 'app:list' %}">
+            <span role='img' aria-label="Home"> 📰</span>
+        </a> 
     </nav>
     
     <main>
